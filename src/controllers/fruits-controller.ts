@@ -5,7 +5,14 @@ import fruitsService, { FruitInput } from "../services/fruits-service";
 
 export function getFruits(req: Request, res: Response) {
   const fruits = fruitsService.getFruits();
+  console.log(fruits)
   res.send(fruits);
+}
+
+export function sum(a: number, b: number){
+  const response = a+b;
+
+  return response
 }
 
 export function getSpecificFruit(req: Request, res: Response) {
